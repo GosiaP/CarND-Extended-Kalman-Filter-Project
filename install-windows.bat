@@ -2,7 +2,7 @@
 
 set "VcPkgPlatform=x64"
 set "VcPkgToolset=v141"
-set "VcPkgBuildType=Release"
+set "VcPkgBuildType=Debug"
 
 if NOT "%~1"=="" set "VcPkgPlatform=%~1"
 if NOT "%~2"=="" set "VcPkgToolset=%~2"
@@ -24,6 +24,7 @@ if not exist "%VcPkgDir%" set "VcPkgDir=%~d0\.vcpkg\vcpkg"
 if not exist "%VcPkgDir%" set "VcPkgDir=C:\Software\vcpkg\vcpkg"
 if not exist "%VcPkgDir%" set "VcPkgDir=C:\.vcpkg\vcpkg"
 if not exist "%VcPkgDir%" set "VcPkgDir=%USERPROFILE%\.vcpkg\vcpkg"
+if not exist "%VcPkgDir%" set "VcPkgDir=e:\udacity_2\vcpkg"
 if not exist "%VcPkgDir%" (
     echo vcpkg not found, installing at %VcPkgDir%...
     git clone --recursive https://github.com/Microsoft/vcpkg.git "%VcPkgDir%"
