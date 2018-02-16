@@ -22,3 +22,7 @@ xcuserdata/
 *.xcscmblueprint
 ide_profiles/xcode/Debug/
 ide_profiles/xcode/ExtendedKF.build/
+/ide_profiles/products
+/ide_profiles/VisualStudio/.vs/CarND-Extended-Kalman-Filter-Project/v15
+/products
+.vs
